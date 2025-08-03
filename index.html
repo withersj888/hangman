@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎯 Hangman Game</h1>
+        
+        <div class="game-area">
+            <div class="hangman-display">
+                <pre id="hangman-art" class="hangman-ascii"></pre>
+            </div>
+            
+            <div class="word-display">
+                <div id="word-container" class="word-container"></div>
+                <div id="category" class="category"></div>
+            </div>
+            
+            <div class="guess-area">
+                <h3>Guess a letter:</h3>
+                <input type="text" id="letter-input" class="letter-input" maxlength="1" placeholder="Enter a letter">
+                <button id="guess-btn" class="guess-btn">Guess</button>
+            </div>
+            
+            <div class="alphabet-grid" id="alphabet-grid"></div>
+            
+            <div class="game-info">
+                <div class="score-area">
+                    <span id="wrong-guesses" class="wrong-guesses">Wrong guesses: 0/6</span>
+                    <span id="score" class="score">Score: 0</span>
+                </div>
+                <div id="guessed-letters" class="guessed-letters">Guessed letters: </div>
+            </div>
+            
+            <div id="game-status" class="game-status"></div>
+            
+            <div class="controls">
+                <button id="new-game-btn" class="new-game-btn">New Game</button>
+                <button id="hint-btn" class="hint-btn">Hint</button>
+            </div>
+        </div>
+        
+        <div id="game-over-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2 id="modal-title"></h2>
+                <p id="modal-message"></p>
+                <button id="play-again-btn" class="play-again-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
