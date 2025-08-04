@@ -1,6 +1,6 @@
 # Hangman Game
 
-A classic word guessing game implemented in Python. Try to guess the secret word letter by letter before the hangman drawing is complete!
+A classic word guessing game implemented in Python. Available in both CLI and web browser versions. Try to guess the secret word letter by letter before the hangman drawing is complete!
 
 ## How to Play
 
@@ -11,12 +11,49 @@ A classic word guessing game implemented in Python. Try to guess the secret word
 4. **Winning**: Reveal all letters in the word before the hangman drawing is complete
 5. **Losing**: If you make 6 wrong guesses, the hangman is complete and you lose
 
-### How to Run the Game
+### Available Versions
 
-#### Requirements
+#### 🌐 Web Browser Version (Recommended)
+Experience the visually rich, interactive hangman game in your web browser!
+
+**Requirements:**
+- Python 3.x
+- Flask (install with `pip install -r requirements.txt`)
+
+**Running the Web Version:**
+1. **Clone or download** this repository
+2. **Navigate** to the game directory:
+   ```bash
+   cd hangman
+   ```
+3. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Start the web server**:
+   ```bash
+   python3 app.py
+   ```
+   or on Windows:
+   ```bash
+   python app.py
+   ```
+5. **Open your browser** and go to: `http://localhost:5000`
+
+**Web Version Features:**
+- 🎨 Beautiful visual interface with gradient backgrounds
+- 🖱️ Interactive virtual keyboard
+- 📱 Responsive design that works on mobile devices
+- ✨ Real-time hangman drawing updates
+- 🎯 Color-coded feedback (green for correct, red for wrong guesses)
+- 🎮 Smooth, modern gaming experience
+
+#### 💻 CLI Version
+
+**CLI Version Requirements:**
 - Python 3.x (no additional packages required)
 
-#### Running the Game
+**Running the CLI Game:**
 1. **Clone or download** this repository
 2. **Navigate** to the game directory:
    ```bash
@@ -31,7 +68,7 @@ A classic word guessing game implemented in Python. Try to guess the secret word
    python hangman.py
    ```
 
-#### Gameplay Instructions
+#### CLI Gameplay Instructions
 1. When the game starts, you'll see:
    - The number of letters in the secret word (shown as underscores)
    - A prompt to guess a letter
@@ -80,6 +117,16 @@ Guessed letters: E, R
 ```
 
 ## Features
+
+### Web Version
+- **🎨 Modern Visual Design**: Beautiful gradient backgrounds and smooth animations
+- **🖱️ Interactive Virtual Keyboard**: Click letters or use your physical keyboard
+- **📱 Responsive Layout**: Works perfectly on desktop, tablet, and mobile devices
+- **✨ Real-time Updates**: Instant visual feedback for all game actions
+- **🎯 Smart Color Coding**: Green for correct guesses, red for wrong ones
+- **🎮 Engaging User Experience**: Professional game interface with clear status indicators
+
+### Both Versions
 - **Random word selection** from a built-in word list
 - **Visual hangman drawing** that progresses with wrong guesses
 - **Input validation** (only accepts single letters)
@@ -88,10 +135,23 @@ Guessed letters: E, R
 - **Play multiple rounds** without restarting
 - **Clear game state display** showing progress and remaining chances
 
+## Screenshots
+
+### Web Browser Version
+![Hangman Web Game](https://github.com/user-attachments/assets/c36fa9d0-d49f-408f-b12b-cf9752e6a8b8)
+*Clean, modern interface with interactive virtual keyboard*
+
+![Hangman Game in Action](https://github.com/user-attachments/assets/5fad9de8-dab5-4d72-b62c-fb8fb8754b1d)
+*Game in progress showing correct (green) and wrong (red) guesses with hangman drawing*
+
 ## Word List
 The game includes a variety of words including:
 - Programming terms (python, computer, keyboard)
 - General vocabulary (mystery, challenge, victory)
 - Game-related words (puzzle, player, score)
 
-Enjoy playing Hangman! 🎮
+Enjoy playing Hangman in both CLI and web browser versions! 🎮
+
+### Quick Start
+- **For a rich visual experience**: Run `python3 app.py` and open `http://localhost:5000`
+- **For classic CLI gameplay**: Run `python3 hangman.py`
