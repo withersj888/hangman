@@ -7,14 +7,14 @@ let gameState = {
     maxWrongGuesses: 6
 };
 
-// Hangman figure parts in order
+// Hangman figure parts in order - positioned relative to gallows
 const hangmanParts = [
-    { content: 'O', top: '0px', left: '0px' },      // head
-    { content: '|', top: '20px', left: '0px' },     // body
-    { content: '/', top: '20px', left: '-20px' },   // left arm
-    { content: '\\', top: '20px', left: '20px' },   // right arm
-    { content: '/', top: '40px', left: '-20px' },   // left leg
-    { content: '\\', top: '40px', left: '20px' }    // right leg
+    { content: 'O', top: '0px', left: '0px' },       // head
+    { content: '|', top: '15px', left: '0px' },      // body
+    { content: '/', top: '30px', left: '-10px' },    // left arm
+    { content: '\\', top: '30px', left: '10px' },    // right arm
+    { content: '/', top: '50px', left: '-10px' },    // left leg
+    { content: '\\', top: '50px', left: '10px' }     // right leg
 ];
 
 document.addEventListener('DOMContentLoaded', function() {

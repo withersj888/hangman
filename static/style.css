@@ -50,7 +50,7 @@ header p {
 
 .hangman-drawing {
     font-family: 'Courier New', monospace;
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.2;
     color: #8B4513;
     background: #f8f9fa;
@@ -59,52 +59,31 @@ header p {
     display: inline-block;
     position: relative;
     min-height: 200px;
+    min-width: 200px;
 }
 
-.gallows {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-.base, .post, .beam, .noose {
-    position: absolute;
+.gallows-art {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.2;
+    color: #8B4513;
     font-weight: bold;
-}
-
-.base {
-    top: 140px;
-    left: 0;
-}
-
-.post {
-    top: 0;
-    left: 0;
-    writing-mode: vertical-lr;
-    height: 140px;
-}
-
-.beam {
-    top: 0;
-    left: 0;
-}
-
-.noose {
-    top: 20px;
-    left: 40px;
 }
 
 .hangman-figure {
     position: absolute;
-    top: 40px;
-    left: 80px;
+    top: 60px;
+    left: 90px;
     font-size: 1.2em;
+    line-height: 1.2;
 }
 
 .hangman-part {
     position: absolute;
     color: #dc3545;
     font-weight: bold;
+    font-size: 1em;
 }
 
 .word-display {
